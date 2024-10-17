@@ -1,3 +1,5 @@
+-- create a trigger that decrease items
+
 DELIMITER //
 
 
