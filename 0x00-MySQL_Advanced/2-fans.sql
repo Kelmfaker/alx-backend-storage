@@ -1,3 +1,5 @@
+-- This SQL file ranks country origins of bands, ordered by the number of funs
+
 SELECT origin, SUM(fans) AS nb_fans
 FROM metal_bands
 GROUP BY origin
