@@ -1,13 +1,4 @@
 #!/usr/bin/env python3
 
-from pymongo import MongoClient
-
-# Connect to MongoDB
-client = MongoClient('localhost', 27017)
-
 # List all databases
-databases = client.list_database_names()
-
-print("Databases:")
-for db in databases:
-    print(f"- {db}")
+db.adminCommand({listDatabases: 1})
