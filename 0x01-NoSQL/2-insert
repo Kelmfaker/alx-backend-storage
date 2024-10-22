@@ -1,4 +1,3 @@
 // insert a document in the collection
 
-db = db.getSiblingDB("<my_db>")
 db.school.insert({name: "Holberton school"})
