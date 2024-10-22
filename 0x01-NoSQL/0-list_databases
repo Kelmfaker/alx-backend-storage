@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
 
 # script lists all databases
-
-show db
+show dbs
