@@ -2,5 +2,4 @@
 
 db.school.updateOne(
    {name: "Holberton school"},
-   {$addToSet: {address: "972"}}
-)
+   {$addToSet: {address: "972"}})
