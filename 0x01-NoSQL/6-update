@@ -1,5 +1,5 @@
 // updates collection by adding new attribute
 
-db.getCollection('school').updateMany(
+db.school.updateMany(
    {name: "Holberton school"},
    {$set: {address: "972"}})
