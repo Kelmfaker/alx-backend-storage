@@ -1,6 +1,6 @@
 // updates collection by adding new attribute
 
-db.school.update(
+db.school.updateOne(
    {name: "Holberton school"},
    {$addToSet: {address: "972"}}
 )
