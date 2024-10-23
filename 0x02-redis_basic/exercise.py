@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import redis
 import uuid
 from typing import Union, Callable, Optional
@@ -35,7 +33,7 @@ class Cache:
         self._redis.set(key, data)
         return key
 
-    def get(self, key: str, fn: Optional[Callable] = None) -> None:
+    def get(self, key: str, fn: Optional[Callable] = None) -> Union[None]:
         value = self._redis.get(key)
         if value is None:
             return None
