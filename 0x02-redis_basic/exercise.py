@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
 
-"""
-Writing strings to Redis
-"""
-
-
 import redis
 import uuid
 from typing import Union, Callable, Optional
@@ -20,8 +15,7 @@ class Cache:
         self._redis.set(key, data)
         return key
 
-    def get(self, key: str, fn: Optional[Callable] = None)
-    -> Union[str, bytes, int, float, None]:
+    def get(self, key: str, fn: Optional[Callable] = None) -> None:
         value = self._redis.get(key)
         if value is None:
             return None
